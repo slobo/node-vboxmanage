@@ -15,7 +15,7 @@ exports.exec = do () ->
 	vboxmanage_path = switch
 		when process.platform.match /^win/ then path.join process.env.VBOX_INSTALL_PATH or '', 'VBoxManage.exe'
 		when process.platform.match /^dar/ then '/Applications/VirtualBox.app/Contents/MacOS/VBoxManage'
-		else 'VboxManage'
+		else 'VBoxManage'
 		
 	vboxmanage_queue = async.queue (task, callback) ->
 		task.run callback
