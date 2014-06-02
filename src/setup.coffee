@@ -1,9 +1,9 @@
 async = require 'async'
-dhcp = require './dhcp.coffee'
-proto = require './proto.coffee'
-share = require './share.coffee'
-hostonly = require './hostonly.coffee'
-adaptors = require './adaptors.coffee'
+dhcp = require './dhcp'
+proto = require './proto'
+share = require './share'
+hostonly = require './hostonly'
+adaptors = require './adaptors'
 
 ###
 	* Configures the system.

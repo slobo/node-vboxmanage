@@ -1,5 +1,5 @@
-machine = require './machine.coffee'
-command = require './command.coffee'
+machine = require './machine'
+command = require './command'
 
 ###
 	* Lists adaptors.

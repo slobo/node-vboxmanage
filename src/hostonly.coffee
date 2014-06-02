@@ -1,7 +1,7 @@
 async = require 'async'
-parse = require './parse.coffee'
-proto = require './proto.coffee'
-command = require './command.coffee'
+parse = require './parse'
+proto = require './proto'
+command = require './command'
 
 ###
 	* Lists hostonly network interfaces.

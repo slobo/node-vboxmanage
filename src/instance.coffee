@@ -1,5 +1,5 @@
-parse= require './parse.coffee'
-command = require './command.coffee'
+parse= require './parse'
+command = require './command'
 
 ###
 	* List running vms.
