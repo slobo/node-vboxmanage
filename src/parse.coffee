@@ -80,3 +80,28 @@ exports.property_list = (input) ->
 		return item
 		
 	return input.split('\n').map(to_item).reduce(to_object)
+
+###
+	* @param {string} input
+###
+exports.version_info = (input) ->
+
+    item = {
+      major: 0
+      minor: 0
+      build: ''
+    }
+
+    return item if not input
+
+    match = /(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9][\da-z\-]*)\b/ig.exec(input.toString())
+
+    return item if not match
+
+    item = {
+      major: parseInt(match[1])
+      minor: parseInt(match[2])
+      build: match[3]
+    }
+
+    return item
