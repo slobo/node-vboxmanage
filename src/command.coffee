@@ -13,7 +13,7 @@ stream_buffers = require 'stream-buffers'
 ###
 exports.exec = do () ->
 	vboxmanage_path = switch
-		when process.platform.match /^win/ then path.join process.env.VBOX_INSTALL_PATH or '', 'VBoxManage.exe'
+		when process.platform.match /^win/ then path.join process.env.VBOX_INSTALL_PATH or process.env.VBOX_MSI_INSTALL_PATH or '', 'VBoxManage.exe'
 		when process.platform.match /^dar/ then '/Applications/VirtualBox.app/Contents/MacOS/VBoxManage'
 		else 'VBoxManage'
 		
