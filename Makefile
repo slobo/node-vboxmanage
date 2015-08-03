@@ -15,7 +15,7 @@ clean: clean-docs
 	rm -rf lib/
 
 build:
-	coffee -o lib/ -c src/
+	coffee -o lib/ -c src/*
 
 dist: clean init docs build
 

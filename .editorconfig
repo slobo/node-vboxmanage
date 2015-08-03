@@ -1,0 +1,6 @@
+# editorconfig.org
+root = true
+
+# Tab indentation (no size specified)
+[Makefile]
+indent_style = tab
