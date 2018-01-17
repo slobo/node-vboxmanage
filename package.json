@@ -1,6 +1,6 @@
 {
 	"name": "vboxmanage",
-	"version": "0.0.16",
+	"version": "0.0.17",
 	"author": "Websecurify <contact@websecurify.com>",
 	"description": "VBoxManage wrapper library.",
 	"license": "MIT",
@@ -26,8 +26,8 @@
 		"async": "0.2.9",
 		"logsmith": "0.0.2"
 	},
-  "devDependencies": {
-    "coffee-script": "1.6.3",
-    "docco": "0.7.0"
+	"devDependencies": {
+		"coffee-script": "1.6.3",
+		"docco": "0.7.0"
 	}
 }
