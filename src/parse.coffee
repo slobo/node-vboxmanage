@@ -53,6 +53,8 @@ exports.machinereadable_list = (input) ->
 		line = line.replace(/^(".+")=/, '$1:')
 		line = line.replace(/^(.+):\d+,/, '$1:0.')
 		line = line.replace(/"@.*$/, '"')
+		line = line.replace(/:(\d+x\d+)$/, ':"$1"') # quote videocapres: 1024x768
+		line = line.replace(/:$/, ':null') # empty properties
 
 		return JSON.parse("{#{line}}")
 
